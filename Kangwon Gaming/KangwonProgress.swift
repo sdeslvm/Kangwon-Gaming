@@ -4,6 +4,10 @@ import Foundation
 class KangwonWebCoordinator: NSObject, WKNavigationDelegate {
     private let kangwonCallback: (KangwonWebStatus) -> Void
     private var kangwonDidStart = false
+    
+    
+    
+    
 
     init(onStatus: @escaping (KangwonWebStatus) -> Void) {
         self.kangwonCallback = onStatus

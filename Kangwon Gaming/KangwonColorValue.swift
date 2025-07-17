@@ -7,6 +7,11 @@ struct KangwonColorUtility {
         var colorValue: UInt64 = 0
         Scanner(string: sanitizedHex).scanHexInt64(&colorValue)
         
+        
+        
+        
+        
+        
         let redComponent = Double((colorValue & 0xFF0000) >> 16) / 255.0
         let greenComponent = Double((colorValue & 0x00FF00) >> 8) / 255.0
         let blueComponent = Double(colorValue & 0x0000FF) / 255.0
